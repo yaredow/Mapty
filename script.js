@@ -34,9 +34,9 @@ class Workout {
       'November',
       'December',
     ];
-    this.description = `${type[0].toUpperCase()}${type.slice(1)} on ${months([
-      this.date.getMonth(),
-    ])} ${this.date.getDate()}`;
+    this.description = `${this.type[0].toUpperCase()}${this.type.slice(1)} on ${
+      months[this.date.getMonth()]
+    } ${this.date.getDate()}`;
   }
 }
 
